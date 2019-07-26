@@ -8,6 +8,12 @@ The basics of the game are that each participate assigns a probability of a part
 
 In this series of notebooks we build a decision tree model that makes predictions for us and then assess how that model would have done against the FiveThirtyEight Elo model as well as Vegas betting odds since 2001. We used Vegas betting data from [3](https://www.kaggle.com/tobycrabtree/nfl-scores-and-betting-data) and encorporated it with the FiveThirtyEight Elo data in order to create a model which outperforms (on average) either model seperately.
 
+### Contributors:
+- Nathan Duvenick (nadbn4@mail.missouri.edu)
+- Gary Gasperino (gdgp63@mail.missouri.edu)
+- Jason Hensley (jh5xf@mail.missouri.edu)
+- Jared Wetzel (jdwkr3@mail.missouri.edu)
+
 ### This Repo
 
 In this repo you'll find three folders:
@@ -30,10 +36,7 @@ The other three notebooks provide the code for any data exploration and visualiz
 
 These notebooks were written in R in a JupyterHub environment and have been exported in the .ipynb format. If you'd like to run this on your own, you will need either the ability to open and run Jupyter notebooks or a way to run R. Beyond that, all of the data and code is included in this repo. You can simply export it as a zip file and run through everything.
 
-### Contributors:
-- Nathan Duvenick (nadbn4@mail.missouri.edu)
-- Gary Gasperino (gdgp63@mail.missouri.edu)
-- Jason Hensley (jh5xf@mail.missouri.edu)
-- Jared Wetzel (jdwkr3@mail.missouri.edu)
-
-
+### References
+1: https://fivethirtyeight.com/features/how-to-play-our-nfl-predictions-game/
+2: https://fivethirtyeight.com/features/introducing-nfl-elo-ratings/
+3: https://www.kaggle.com/tobycrabtree/nfl-scores-and-betting-data
