@@ -2,11 +2,11 @@
 This repo provides a series of notebooks which goes through how we built a model to try and beat FiveThirtyEight at their own game. We go through data preperation and cleaning, provide multivariate and univariate analysis notebooks, and finally a notebook on how to run and score the model.
 
 ## The Game
-For the past 3 years, FiveThirtyEight has forecasting the outcome of games for the upcoming NFL season. They allowed readers to participate and compete against them by putting in their own predictions. A description of the game can be found at [1](https://fivethirtyeight.com/features/how-to-play-our-nfl-predictions-game/) with a description of FiveThirtyEight's Elo model being found at [2](https://fivethirtyeight.com/features/introducing-nfl-elo-ratings/).
+For the past 3 years, FiveThirtyEight has forecasted the outcome of games for the upcoming NFL season. They allowed readers to participate and compete against them by doing their own predictions. A description of the game can be found at [1](https://fivethirtyeight.com/features/how-to-play-our-nfl-predictions-game/) with a description of FiveThirtyEight's Elo model being found at [2](https://fivethirtyeight.com/features/introducing-nfl-elo-ratings/).
 
 The basics of the game are that each participant assigns a probabilities to each team winning in each game. Depending on the outcome and the prediction made, the participant either loses points (up to -75) or they gain points (up to +25) related to how aggressive or conservative their prediction was. For instance, if a prediction was made that the probability that the Steelers would beat the Browns was 90% then a correct prediction would net most of the 25 points whereas an incorrect one would lose most of the 75 points.
 
-In the series of notebooks we provide, we build a decision tree model that makes predictions for us and then assesses how that model would have done against the FiveThirtyEight Elo model as well as Vegas betting odds since the 2002 season. We used Vegas betting data from [3](https://www.kaggle.com/tobycrabtree/nfl-scores-and-betting-data) and encorporated it with the FiveThirtyEight Elo data in order to create a model which outperforms (on average) either model seperately.
+In the series of notebooks we provide, we build a decision tree model that makes predictions for us and then assess how that model would have done against the FiveThirtyEight Elo model as well as Vegas betting odds since the 2002 season. We used Vegas betting data from [3](https://www.kaggle.com/tobycrabtree/nfl-scores-and-betting-data) and encorporated it with the FiveThirtyEight Elo data in order to create a model which outperforms (on average) either model seperately.
 
 ### Contributors:
 - Nathan Duvenick (nadbn4@mail.missouri.edu)
