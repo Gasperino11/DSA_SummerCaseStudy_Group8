@@ -38,5 +38,7 @@ These notebooks were written in R in a JupyterHub environment and have been expo
 
 ### References
 1: https://fivethirtyeight.com/features/how-to-play-our-nfl-predictions-game/
+
 2: https://fivethirtyeight.com/features/introducing-nfl-elo-ratings/
+
 3: https://www.kaggle.com/tobycrabtree/nfl-scores-and-betting-data
