@@ -4,9 +4,9 @@ This repo provides a series of notebooks which goes through how we built a model
 ## The Game
 For the past 3 years, FiveThirtyEight has forecasting the outcome of games for the upcoming NFL season. They allowed readers to participate and compete against them by putting in their own predictions. A description of the game can be found at [1](https://fivethirtyeight.com/features/how-to-play-our-nfl-predictions-game/) with a description of FiveThirtyEight's Elo model being found at [2](https://fivethirtyeight.com/features/introducing-nfl-elo-ratings/).
 
-The basics of the game are that each participate assigns a probability of a particular team in each game winning. Depending on the outcome and the prediction made, the participate either losers points (up to -75) or they gain points (up to +25) related to how aggressive or conservative their prediction was. For instances, if a prediction was made that the probability that the Steelers would beat the Browns was 90% then a correct prediction would net most of the 25 points whereas an incorrect one would lose most of the 75 points.
+The basics of the game are that each participant assigns a probabilities to each team winning in each game. Depending on the outcome and the prediction made, the participant either loses points (up to -75) or they gain points (up to +25) related to how aggressive or conservative their prediction was. For instance, if a prediction was made that the probability that the Steelers would beat the Browns was 90% then a correct prediction would net most of the 25 points whereas an incorrect one would lose most of the 75 points.
 
-In this series of notebooks we build a decision tree model that makes predictions for us and then assess how that model would have done against the FiveThirtyEight Elo model as well as Vegas betting odds since 2001. We used Vegas betting data from [3](https://www.kaggle.com/tobycrabtree/nfl-scores-and-betting-data) and encorporated it with the FiveThirtyEight Elo data in order to create a model which outperforms (on average) either model seperately.
+In the series of notebooks we provide, we build a decision tree model that makes predictions for us and then assesses how that model would have done against the FiveThirtyEight Elo model as well as Vegas betting odds since the 2002 season. We used Vegas betting data from [3](https://www.kaggle.com/tobycrabtree/nfl-scores-and-betting-data) and encorporated it with the FiveThirtyEight Elo data in order to create a model which outperforms (on average) either model seperately.
 
 ### Contributors:
 - Nathan Duvenick (nadbn4@mail.missouri.edu)
@@ -28,9 +28,11 @@ There are five total notebooks that we used. Only two of them are required to ru
 - Data_Preparation_and_Cleaning
 - Decision_Tree_Model
 
-Data_Preparation_and_Cleaning runs through the process of loading the data, joining any disparate data frames, and then removing/imputing any null values. Decision_Tree_Model takes the output from Data_Preparation_and_Cleaning and creates a decision tree model which then assigns to predictions to each game. These predictions are run through the scoring alogrithm for each NFL season between 2001 and 2017. We check the FiveThrityEight Elo model as well as Vegas betting and score those as well so we can see how our model performs against those.
+**Data_Preparation_and_Cleaning** runs through the process of loading the data, joining any disparate data frames, and then removing/imputing any null values. 
 
-The other three notebooks provide the code for any data exploration and visualization we did in order to validate our assumptions and results. The
+**Decision_Tree_Model** takes the output from Data_Preparation_and_Cleaning, adds additional variables required for generating Elo ratings, and evaluates those models based on Brier Scores. Each model is there compared over time to see which one performed the best in a given season.
+
+The other three notebooks provide the code for any data exploration and visualization we did in order to validate our assumptions and results.
 
 ### Considerations
 
@@ -41,4 +43,8 @@ These notebooks were written in R in a JupyterHub environment and have been expo
 
 2: https://fivethirtyeight.com/features/introducing-nfl-elo-ratings/
 
-3: https://www.kaggle.com/tobycrabtree/nfl-scores-and-betting-data
+3: https://fivethirtyeight.com/methodology/how-our-nfl-predictions-work/
+
+4: https://www.kaggle.com/tobycrabtree/nfl-scores-and-betting-data
+
+5: https://en.wikipedia.org/wiki/Elo_rating_system
