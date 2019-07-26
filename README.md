@@ -29,3 +29,11 @@ The other three notebooks provide the code for any data exploration and visualiz
 ### Considerations
 
 These notebooks were written in R in a JupyterHub environment and have been exported in the .ipynb format. If you'd like to run this on your own, you will need either the ability to open and run Jupyter notebooks or a way to run R. Beyond that, all of the data and code is included in this repo. You can simply export it as a zip file and run through everything.
+
+### Contributors:
+- Nathan Duvenick (nadbn4@mail.missouri.edu)
+- Gary Gasperino (gdgp63@mail.missouri.edu)
+- Jason Hensley (jh5xf@mail.missouri.edu)
+- Jared Wetzel (jdwkr3@mail.missouri.edu)
+
+
