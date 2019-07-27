@@ -28,13 +28,21 @@ There are five total notebooks that we used. Only two of them are required to ru
 - Data_Preparation_and_Cleaning
 - Adapting_the_Elo_Model
 
-**Data_Preparation_and_Cleaning** runs through the process of loading the data, joining any disparate data frames, and then removing/imputing any null values. 
+**Data_Preparation_and_Cleaning** runs through the process of loading the data, joining any disparate data frames, and then removing/imputing any null values.
 
 **Adapting_the_Elo_Model** takes the output from Data_Preparation_and_Cleaning, adds additional variables required for generating Elo ratings, and evaluates those models based on Brier Scores. Each model is there compared over time to see which one performed the best in a given season.
 
 The other three notebooks are used for data exploration and visualization. They are not required to prepare predictions for the FiveThirtyEight NFL Forecasting game.
 
 **Univariate_Analysis** and **Multivariate_Analysis** provide our initial findings from our data exploration as well as our visualizations. The **Data_Story_Visualizations** notebook has the code used to generate the visualizations in our Group8_Outsmarting_Elo powerpoint.
+
+### Run Order
+
+1. Data_Preparation_and_Cleaning
+2. Adapting_the_Elo_Model
+3. Data_Story_Visualizations
+
+All other notebooks can be run independently.
 
 ### Considerations
 
