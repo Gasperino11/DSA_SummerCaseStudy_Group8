@@ -17,7 +17,7 @@ In the series of notebooks we provide, we build a decision tree model that makes
 ### This Repo
 
 In this repo you'll find three folders:
-- Notebooks: this folder contains the jupyter notebooks with our code
+- Notebooks: this folder contains the jupyter notebooks with our code along with any output from those notebooks
 - Data: this folder contains all the data we used, downloaded from the source
 - Images: this folder contains images of the output of our analysis
 
@@ -26,17 +26,23 @@ In this repo you'll find three folders:
 There are five total notebooks that we used. Only two of them are required to run the model which generates the predictions:
 
 - Data_Preparation_and_Cleaning
-- Decision_Tree_Model
+- Adapting_the_Elo_Model
 
 **Data_Preparation_and_Cleaning** runs through the process of loading the data, joining any disparate data frames, and then removing/imputing any null values. 
 
-**Decision_Tree_Model** takes the output from Data_Preparation_and_Cleaning, adds additional variables required for generating Elo ratings, and evaluates those models based on Brier Scores. Each model is there compared over time to see which one performed the best in a given season.
+**Adapting_the_Elo_Model** takes the output from Data_Preparation_and_Cleaning, adds additional variables required for generating Elo ratings, and evaluates those models based on Brier Scores. Each model is there compared over time to see which one performed the best in a given season.
 
-The other three notebooks provide the code for any data exploration and visualization we did in order to validate our assumptions and results.
+The other three notebooks are used for data exploration and visualization. They are not required to prepare predictions for the FiveThirtyEight NFL Forecasting game.
+
+**Univariate_Analysis** and **Multivariate_Analysis** provide our initial findings from our data exploration as well as our visualizations. The **Data_Story_Visualizations** notebook has the code used to generate the visualizations in our Group8_Outsmarting_Elo powerpoint.
 
 ### Considerations
 
 These notebooks were written in R in a JupyterHub environment and have been exported in the .ipynb format. If you'd like to run this on your own, you will need either the ability to open and run Jupyter notebooks or a way to run R. Beyond that, all of the data and code is included in this repo. You can simply export it as a zip file and run through everything.
+
+### Results
+
+We have compiled our data story into a powerpoint, which is also available in the repo under Group8_Outsmarting_Elo. It is the culmination of our work thus far, explaining our conclusion regarding using FiveThirtyEight's Elo ratings along with Vegas betting data. We will continue to refine it as we build more complicated ML models to help us better forecast NFL games.
 
 ### References
 1: https://fivethirtyeight.com/features/how-to-play-our-nfl-predictions-game/
@@ -48,3 +54,7 @@ These notebooks were written in R in a JupyterHub environment and have been expo
 4: https://www.kaggle.com/tobycrabtree/nfl-scores-and-betting-data
 
 5: https://en.wikipedia.org/wiki/Elo_rating_system
+
+6: https://en.wikipedia.org/wiki/Brier_score
+
+7: https://medium.com/the-intelligent-sports-wagerer/what-point-spreads-can-teach-you-about-implied-win-probabilities-a8bb3623d2c5
